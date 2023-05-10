@@ -91,7 +91,7 @@ React.useEffect(() => {
    
     const fetchData = async () => {
     
-      const response = await fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/activities/history/' + userId, {
+      const response = await fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/activities/history/' + userId, {
         method: 'GET',
         headers: new Headers({
           Authorization: 'bearer ' + userData.token,
@@ -164,7 +164,7 @@ if(updateCount > 0){
       // activityType == "Live Surgery" 
       // ){
 
-      await fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/call_contacts/'+ activityId, {
+      await fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/call_contacts/'+ activityId, {
         method: 'DELETE',
         headers: new Headers({
           Authorization: 'bearer ' + userData.token,
@@ -174,7 +174,7 @@ if(updateCount > 0){
         const resC = await response.json()
         console.log("res of call_contacts are", resC)
 
-           await fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/call_products/'+ activityId, {
+           await fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/call_products/'+ activityId, {
                method: 'DELETE',
         headers: new Headers({
           Authorization: 'bearer ' + userData.token,
@@ -186,7 +186,7 @@ if(updateCount > 0){
              
               console.log("res of call_products are", resP)
 
-              const responseD = await fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/activities/' + activityId, {
+              const responseD = await fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/activities/' + activityId, {
                 method: 'DELETE',
                 headers: new Headers({
                   Authorization: 'bearer ' + userData.token,
@@ -208,7 +208,7 @@ if(updateCount > 0){
 
       // }else{
 
-      //   const responseD = await fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/activities/' + activityId, {
+      //   const responseD = await fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/activities/' + activityId, {
       //           method: 'DELETE',
       //           headers: new Headers({
       //             Authorization: 'bearer ' + userData.token,

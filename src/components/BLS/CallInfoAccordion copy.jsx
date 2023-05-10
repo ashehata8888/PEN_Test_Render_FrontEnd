@@ -53,7 +53,7 @@
 //   const key = userData.bl1_id
 //   useEffect(() => {
 //     const fetchData = async () => {
-//       await fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/suppliers/names/' + key, {
+//       await fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/suppliers/names/' + key, {
 //         method: 'GET',
 //         headers: new Headers({
 //           Authorization: 'bearer ' + userData.token,
@@ -73,7 +73,7 @@
 //     setSupplierId(supKey)
 //     //console.log(supKey)
 //     const pFresponse = async () => {
-//       fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/product_families/names/' + supKey, {
+//       fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/product_families/names/' + supKey, {
 //         method: 'GET',
 //         headers: new Headers({
 //           Authorization: 'bearer ' + userData.token,
@@ -94,7 +94,7 @@
 //     setproductFamilyId(pFKey)
 
 //     const iGresponse = async () => {
-//       fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/item_groups/names/' + pFKey, {
+//       fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/item_groups/names/' + pFKey, {
 //         method: 'GET',
 //         headers: new Headers({
 //           Authorization: 'bearer ' + userData.token,
@@ -228,7 +228,7 @@
 //         activity_id: activityId
 //       }
 
-//       const res = fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/call_products', {
+//       const res = fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/call_products', {
 //         method: 'post',
 //         headers: new Headers({
 //           Authorization: 'bearer ' + userData.token,
@@ -253,7 +253,7 @@
 //           }
 
 //           const postCallContact = () => {
-//             fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/call_contacts', {
+//             fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/call_contacts', {
 //               method: 'post',
 //               headers: new Headers({
 //                 Authorization: 'bearer ' + userData.token,

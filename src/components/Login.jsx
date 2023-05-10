@@ -10,6 +10,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 // Create WebSocket connection
 // const socket = new WebSocket(''https://backend-ahmed-shehata-crm.onrender.com'');
+// test
 
 // Listen for possible errors
 // socket.addEventListener('error', (event) => {

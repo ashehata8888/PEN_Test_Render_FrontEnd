@@ -131,7 +131,7 @@ export default function MarketSizeRow({
 useEffect(()=>{
   const supllierID = userData.supplierId;
   const fetchData = async () => {
-    await fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/suppliers/names/" + BL, {
+    await fetch("https://backend-ahmed-shehata-crm.onrender.com/api/suppliers/names/" + BL, {
       method: "GET",
       headers: new Headers({
         Authorization: "bearer " + userData.token,
@@ -161,7 +161,7 @@ useEffect(()=>{
   
     setSupplierId(parseInt(event.target.value))
     const pFresponse = async () => {
-      fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/product_families/names/" + supKey, {
+      fetch("https://backend-ahmed-shehata-crm.onrender.com/api/product_families/names/" + supKey, {
         method: "GET",
         headers: new Headers({
           Authorization: "bearer " + userData.token,
@@ -177,7 +177,7 @@ useEffect(()=>{
     const fetchCompetitors = async () => {
       console.log("BL is ......,", BL);
       console.log("supkey is ......,", supKey);
-      await fetch(`http://https://backend-ahmed-shehata-crm.onrender.com/api/competitors/${BL}/${supKey}`, {
+      await fetch(`'https://backend-ahmed-shehata-crm.onrender.com'/api/competitors/${BL}/${supKey}`, {
         method: "GET",
         headers: new Headers({
           Authorization: "bearer " + userData.token,
@@ -204,7 +204,7 @@ useEffect(()=>{
    setProductFamilyId(parseInt(event.target.value))
 
     const iGresponse = async () => {
-      fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/item_groups/names/" + pFKey, {
+      fetch("https://backend-ahmed-shehata-crm.onrender.com/api/item_groups/names/" + pFKey, {
         method: "GET",
         headers: new Headers({
           Authorization: "bearer " + userData.token,

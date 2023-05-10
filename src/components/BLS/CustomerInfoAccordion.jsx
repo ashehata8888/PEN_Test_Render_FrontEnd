@@ -113,7 +113,7 @@ export default function customerInfoAccordion({
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        "http://https://backend-ahmed-shehata-crm.onrender.com/api/accounts/names/" + key,
+        "https://backend-ahmed-shehata-crm.onrender.com/api/accounts/names/" + key,
         {
           method: "GET",
           headers: new Headers({
@@ -362,7 +362,7 @@ export default function customerInfoAccordion({
     console.log(JSON.stringify(postData));
     // useEffect(async () =>{
     // try {
-    const res = await fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/activities", {
+    const res = await fetch("https://backend-ahmed-shehata-crm.onrender.com/api/activities", {
       method: "post",
       headers: new Headers({
         Authorization: "bearer " + userData.token,
@@ -405,7 +405,7 @@ export default function customerInfoAccordion({
         // setSaveSuccessMsg("The Activity was Save Susssfully")
         // setTimeout(()=>setSaveSuccessMsg(""),3000)
       } else {
-        const res = await fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/call_products", {
+        const res = await fetch("https://backend-ahmed-shehata-crm.onrender.com/api/call_products", {
           method: "post",
           headers: new Headers({
             Authorization: "bearer " + userData.token,
@@ -428,7 +428,7 @@ export default function customerInfoAccordion({
           };
 
           const postCallContact = async () => {
-            await fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/call_contacts", {
+            await fetch("https://backend-ahmed-shehata-crm.onrender.com/api/call_contacts", {
               method: "post",
               headers: new Headers({
                 Authorization: "bearer " + userData.token,

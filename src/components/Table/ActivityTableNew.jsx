@@ -65,7 +65,7 @@ class ActivityTableNew extends Component {
 
   fetchData = async () => {
     const response = await fetch(
-      "http://https://backend-ahmed-shehata-crm.onrender.com/api/activities/history/" + this.state.userData.id,
+      "https://backend-ahmed-shehata-crm.onrender.com/api/activities/history/" + this.state.userData.id,
       {
         method: "GET",
         headers: new Headers({
@@ -186,7 +186,7 @@ class ActivityTableNew extends Component {
       2000
     );
 
-    await fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/call_contacts/" + ActId, {
+    await fetch("https://backend-ahmed-shehata-crm.onrender.com/api/call_contacts/" + ActId, {
       method: "DELETE",
       headers: new Headers({
         Authorization: "bearer " + this.state.userData.token,
@@ -196,7 +196,7 @@ class ActivityTableNew extends Component {
       const resC = await response.json();
       console.log("res of call_contacts are", resC);
 
-      await fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/call_products/" + ActId, {
+      await fetch("https://backend-ahmed-shehata-crm.onrender.com/api/call_products/" + ActId, {
         method: "DELETE",
         headers: new Headers({
           Authorization: "bearer " + this.state.userData.token,
@@ -209,7 +209,7 @@ class ActivityTableNew extends Component {
           console.log("res of call_products are", resP);
 
           const responseD = await fetch(
-            "http://https://backend-ahmed-shehata-crm.onrender.com/api/activities/" + ActId,
+            "https://backend-ahmed-shehata-crm.onrender.com/api/activities/" + ActId,
             {
               method: "DELETE",
               headers: new Headers({

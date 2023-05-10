@@ -65,7 +65,7 @@ export default function AccountNameAdress() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        "http://https://backend-ahmed-shehata-crm.onrender.com/api/accounts/names/" + key,
+        "https://backend-ahmed-shehata-crm.onrender.com/api/accounts/names/" + key,
         {
           method: "GET",
           headers: new Headers({

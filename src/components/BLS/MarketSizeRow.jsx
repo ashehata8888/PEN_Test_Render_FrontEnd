@@ -212,7 +212,7 @@ class MarketSizeRow extends Component {
     const BL = this.state.userData.bl1_id;
     const supllierID = this.state.supplierId;
     const fetchData = async () => {
-      await fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/suppliers/names/" + BL, {
+      await fetch("https://backend-ahmed-shehata-crm.onrender.com/api/suppliers/names/" + BL, {
         method: "GET",
         headers: new Headers({
           Authorization: "bearer " + this.state.userData.token,
@@ -332,7 +332,7 @@ class MarketSizeRow extends Component {
     // this.props.dispatch(updateSupplier_id(event.target.value));
 
     const pFresponse = async () => {
-      fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/product_families/names/" + supKey, {
+      fetch("https://backend-ahmed-shehata-crm.onrender.com/api/product_families/names/" + supKey, {
         method: "GET",
         headers: new Headers({
           Authorization: "bearer " + this.state.userData.token,
@@ -350,7 +350,7 @@ class MarketSizeRow extends Component {
 
     // const pFresponseGS = async () => {
     //   fetch(
-    //     "http://https://backend-ahmed-shehata-crm.onrender.com/api/product_families/names/" + this.state.supplierId,
+    //     "https://backend-ahmed-shehata-crm.onrender.com/api/product_families/names/" + this.state.supplierId,
     //     {
     //       method: "GET",
     //       headers: new Headers({
@@ -375,8 +375,8 @@ class MarketSizeRow extends Component {
       console.log("supkey is ......,", supKey);
 
       // + BL +"/" + supKey
-      // "http://https://backend-ahmed-shehata-crm.onrender.com/api/competitors/" + BL + "/" + supKey
-      await fetch(`http://https://backend-ahmed-shehata-crm.onrender.com/api/competitors/${BL}/${supKey}`, {
+      // "https://backend-ahmed-shehata-crm.onrender.com/api/competitors/" + BL + "/" + supKey
+      await fetch(`'https://backend-ahmed-shehata-crm.onrender.com'/api/competitors/${BL}/${supKey}`, {
         method: "GET",
         headers: new Headers({
           Authorization: "bearer " + this.state.userData.token,
@@ -420,7 +420,7 @@ class MarketSizeRow extends Component {
     // }
 
     const iGresponse = async () => {
-      fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/item_groups/names/" + pFKey, {
+      fetch("https://backend-ahmed-shehata-crm.onrender.com/api/item_groups/names/" + pFKey, {
         method: "GET",
         headers: new Headers({
           Authorization: "bearer " + this.state.userData.token,

@@ -111,7 +111,7 @@ const downloadFile = ({ data, fileName, fileType ,charset }) => {
 
    
        const fetchActivityData = async()=> {
-              const response = await fetch('http://https://backend-ahmed-shehata-crm.onrender.com/api/activities/superuser' , {
+              const response = await fetch(''https://backend-ahmed-shehata-crm.onrender.com'/api/activities/superuser' , {
                 method: 'GET',
                 headers: new Headers({
                   Authorization: 'bearer ' + newUserData.token,

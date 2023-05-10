@@ -9,14 +9,14 @@ import { Link, useNavigate } from 'react-router-dom'
 
 
 // Create WebSocket connection
-// const socket = new WebSocket('http://https://backend-ahmed-shehata-crm.onrender.com');
+// const socket = new WebSocket(''https://backend-ahmed-shehata-crm.onrender.com'');
 
 // Listen for possible errors
 // socket.addEventListener('error', (event) => {
 //   console.log('WebSocket error: ', event);
 // });
-// http://https://backend-ahmed-shehata-crm.onrender.com
-const LOGIN_URL = https://backend-ahmed-shehata-crm.onrender.com
+// 'https://backend-ahmed-shehata-crm.onrender.com'
+const LOGIN_URL = 'https://backend-ahmed-shehata-crm.onrender.com'
 // const LOGIN_URL = https://backend-ahmed-shehata-crm.onrender.com
 // const LOGIN_URL = new WebSocket('ws://https://backend-ahmed-shehata-crm.onrender.com/api/users/authenticate')
 // var LOGIN_URL = new WebSocket("ws:http//https://backend-ahmed-shehata-crm.onrender.com/api/users/authenticate","echo-protocol");

@@ -366,7 +366,7 @@ export default function CustomizedAccordions({
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/suppliers/names/" + key, {
+      await fetch("https://backend-ahmed-shehata-crm.onrender.com/api/suppliers/names/" + key, {
         method: "GET",
         headers: new Headers({
           Authorization: "bearer " + userData.token,
@@ -384,7 +384,7 @@ export default function CustomizedAccordions({
     const supKey = event.target.value;
     setSupplierId(supKey);
     const pFresponse = async () => {
-      fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/product_families/names/" + supKey, {
+      fetch("https://backend-ahmed-shehata-crm.onrender.com/api/product_families/names/" + supKey, {
         method: "GET",
         headers: new Headers({
           Authorization: "bearer " + userData.token,
@@ -402,7 +402,7 @@ export default function CustomizedAccordions({
     const pFKey = event.target.value;
     setproductFamilyId(pFKey);
     const iGresponse = async () => {
-      fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/item_groups/names/" + pFKey, {
+      fetch("https://backend-ahmed-shehata-crm.onrender.com/api/item_groups/names/" + pFKey, {
         method: "GET",
         headers: new Headers({
           Authorization: "bearer " + userData.token,
@@ -572,7 +572,7 @@ export default function CustomizedAccordions({
       //   console.log("postCall contact Data in contatact loop are :", finalPostCallContactData)
       // })
 
-      const res = await fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/call_products", {
+      const res = await fetch("https://backend-ahmed-shehata-crm.onrender.com/api/call_products", {
         method: "post",
         headers: new Headers({
           Authorization: "bearer " + userData.token,
@@ -623,7 +623,7 @@ export default function CustomizedAccordions({
           );
 
           const postCallContact = async () => {
-            await fetch("http://https://backend-ahmed-shehata-crm.onrender.com/api/call_contacts", {
+            await fetch("https://backend-ahmed-shehata-crm.onrender.com/api/call_contacts", {
               method: "post",
               headers: new Headers({
                 Authorization: "bearer " + userData.token,
